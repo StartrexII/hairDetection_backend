@@ -16,7 +16,6 @@ coverage.xml
 *.cover
 *.log
 .git
-.gitignore
 .mypy_cache
 .pytest_cache
 .hypothesis
