@@ -54,6 +54,7 @@ def modelPrediction(url: str) -> str:
     try:    
         result = detector.getColorRatio(detector.getFaceAndHair(rectangle))
         result = pd.DataFrame(result, columns=colorNames)
+        result.fillna(0, inplace=True)
     except cv2.error:
         return 'None'
     else:
